@@ -32,8 +32,5 @@ def generate_deck():
         for value in values:
             card_value = face_cards.get(value, value)
             deck.append(Card(suit, card_value))
+            random.shuffle(deck)
     return deck
-
-#Generate Deck and shuffle
-deck = generate_deck()
-random.shuffle(deck)
